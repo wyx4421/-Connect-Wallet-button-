@@ -181,9 +181,47 @@ h5 {
   color: rgba(0, 0, 0, 0.425);
   padding: 7px 15px;
 }
+.walletConnect {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+.walletConnect button {
+  min-width: 220px;
+  border: none;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  background: #181d24;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 12px 20px;
+  transition: 0.3s;
+}
+.walletConnect button:hover:not(:disabled) {
+  background: #5b656f;
+  transition: 0.3s;
+}
+.walletConnect button:disabled {
+  cursor: wait;
+  opacity: 0.75;
+}
+.walletBalance {
+  background: rgba(255, 255, 255, 0.88);
+  color: #181d24;
+  font-weight: 700;
+  padding: 6px 12px;
+  text-align: center;
+}
 @media (max-width: 620px) {
   #hero {
     padding: 100px 20px;
+  }
+  .walletConnect,
+  .walletConnect button {
+    width: 100%;
   }
 }
 /*************************TOP VILLAS STYLING***************************************************/
